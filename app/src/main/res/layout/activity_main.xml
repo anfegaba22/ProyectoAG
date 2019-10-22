@@ -13,9 +13,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="150dp"
         android:background="#00BCD4"
-        android:gravity="center"
         android:paddingRight="20dp"
         android:paddingLeft="20dp"
         android:paddingTop="20dp"
@@ -28,7 +27,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Texto"
+            android:text="Ingresar"
             android:textSize="24dp"
             android:textColor="#101111"/>
 
@@ -37,22 +36,31 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="1">
+        android:columnCount="1"
+        android:rowCount="2">
 
         <EditText
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Usuario"
+            android:textColorHint="@color/colorPrimaryDark"
             />
         <EditText
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"/>
+            android:hint="Contraseña"
+            android:textColorHint="@color/colorPrimaryDark"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ingresar"/>
-
+            android:text="Ingresar"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="¿No tienes cuenta?"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"/>
 
     </GridLayout>
 <!--    <EditText-->
