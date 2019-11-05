@@ -36,6 +36,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.dash1:
                 Intent intent2 = new Intent(v.getContext(),dashboard.class);
+                intent2.putExtra("Mensaje","Evento creado con exito");
                 startActivityForResult(intent2, 0);
                 break;
         }

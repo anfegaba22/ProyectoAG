@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class dashboard extends AppCompatActivity implements View.OnClickListener{
 
@@ -17,6 +18,12 @@ public class dashboard extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
         initControl();
+
+        Bundle parametros = this.getIntent().getExtras();
+        if (parametros !=null){
+            String mensaje = parametros.getString("Mensaje");
+            Toast.makeText(getApplicationContext(),mensaje,Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void initControl() {

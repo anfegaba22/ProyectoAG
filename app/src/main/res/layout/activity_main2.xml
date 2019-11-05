@@ -7,11 +7,40 @@
     tools:context=".Main2Activity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:paddingLeft="25dp"
+            android:paddingTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Registrar"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Bienvenido"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:textColorHint="@color/colorPrimaryDark"/>
+
+        </RelativeLayout>
 
 
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <Button
             android:id="@+id/inicio2"
             android:layout_width="wrap_content"
@@ -24,7 +53,7 @@
             android:layout_height="wrap_content"
             android:text="Dashboard"
             android:textColor="@color/colorPrimaryDark"/>
-
+        </GridLayout>
 
     </LinearLayout>
 </ScrollView>
