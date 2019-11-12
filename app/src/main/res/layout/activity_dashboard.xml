@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <RelativeLayout
-            android:background="@color/colorPrimary"
+            android:background="@drawable/gradiente"
             android:paddingTop="20sp"
             android:paddingRight="20dp"
             android:paddingLeft="20dp"
